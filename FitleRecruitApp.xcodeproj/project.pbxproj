@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91F006851BFC773B00047BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F006841BFC773B00047BF4 /* AppDelegate.swift */; };
+		91F006871BFC773B00047BF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F006861BFC773B00047BF4 /* ViewController.swift */; };
+		91F0068A1BFC773B00047BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F006881BFC773B00047BF4 /* Main.storyboard */; };
+		91F0068C1BFC773B00047BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F0068B1BFC773B00047BF4 /* Assets.xcassets */; };
+		91F0068F1BFC773B00047BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F0068D1BFC773B00047BF4 /* LaunchScreen.storyboard */; };
+		91F0069A1BFC773B00047BF4 /* FitleRecruitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F006991BFC773B00047BF4 /* FitleRecruitAppTests.swift */; };
+		91F006A51BFC773B00047BF4 /* FitleRecruitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F006A41BFC773B00047BF4 /* FitleRecruitAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91F006961BFC773B00047BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91F006791BFC773A00047BF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91F006801BFC773B00047BF4;
+			remoteInfo = FitleRecruitApp;
+		};
+		91F006A11BFC773B00047BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91F006791BFC773A00047BF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91F006801BFC773B00047BF4;
+			remoteInfo = FitleRecruitApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		91F006811BFC773B00047BF4 /* FitleRecruitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitleRecruitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F006841BFC773B00047BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91F006861BFC773B00047BF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91F006891BFC773B00047BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91F0068B1BFC773B00047BF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91F0068E1BFC773B00047BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91F006901BFC773B00047BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F006951BFC773B00047BF4 /* FitleRecruitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitleRecruitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F006991BFC773B00047BF4 /* FitleRecruitAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitleRecruitAppTests.swift; sourceTree = "<group>"; };
+		91F0069B1BFC773B00047BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F006A01BFC773B00047BF4 /* FitleRecruitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitleRecruitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F006A41BFC773B00047BF4 /* FitleRecruitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitleRecruitAppUITests.swift; sourceTree = "<group>"; };
+		91F006A61BFC773B00047BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91F0067E1BFC773B00047BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F006921BFC773B00047BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F0069D1BFC773B00047BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91F006781BFC773A00047BF4 = {
+			isa = PBXGroup;
+			children = (
+				91F006831BFC773B00047BF4 /* FitleRecruitApp */,
+				91F006981BFC773B00047BF4 /* FitleRecruitAppTests */,
+				91F006A31BFC773B00047BF4 /* FitleRecruitAppUITests */,
+				91F006821BFC773B00047BF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91F006821BFC773B00047BF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91F006811BFC773B00047BF4 /* FitleRecruitApp.app */,
+				91F006951BFC773B00047BF4 /* FitleRecruitAppTests.xctest */,
+				91F006A01BFC773B00047BF4 /* FitleRecruitAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91F006831BFC773B00047BF4 /* FitleRecruitApp */ = {
+			isa = PBXGroup;
+			children = (
+				91F006841BFC773B00047BF4 /* AppDelegate.swift */,
+				91F006861BFC773B00047BF4 /* ViewController.swift */,
+				91F006881BFC773B00047BF4 /* Main.storyboard */,
+				91F0068B1BFC773B00047BF4 /* Assets.xcassets */,
+				91F0068D1BFC773B00047BF4 /* LaunchScreen.storyboard */,
+				91F006901BFC773B00047BF4 /* Info.plist */,
+			);
+			path = FitleRecruitApp;
+			sourceTree = "<group>";
+		};
+		91F006981BFC773B00047BF4 /* FitleRecruitAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				91F006991BFC773B00047BF4 /* FitleRecruitAppTests.swift */,
+				91F0069B1BFC773B00047BF4 /* Info.plist */,
+			);
+			path = FitleRecruitAppTests;
+			sourceTree = "<group>";
+		};
+		91F006A31BFC773B00047BF4 /* FitleRecruitAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				91F006A41BFC773B00047BF4 /* FitleRecruitAppUITests.swift */,
+				91F006A61BFC773B00047BF4 /* Info.plist */,
+			);
+			path = FitleRecruitAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91F006801BFC773B00047BF4 /* FitleRecruitApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91F006A91BFC773B00047BF4 /* Build configuration list for PBXNativeTarget "FitleRecruitApp" */;
+			buildPhases = (
+				91F0067D1BFC773B00047BF4 /* Sources */,
+				91F0067E1BFC773B00047BF4 /* Frameworks */,
+				91F0067F1BFC773B00047BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitleRecruitApp;
+			productName = FitleRecruitApp;
+			productReference = 91F006811BFC773B00047BF4 /* FitleRecruitApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91F006941BFC773B00047BF4 /* FitleRecruitAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91F006AC1BFC773B00047BF4 /* Build configuration list for PBXNativeTarget "FitleRecruitAppTests" */;
+			buildPhases = (
+				91F006911BFC773B00047BF4 /* Sources */,
+				91F006921BFC773B00047BF4 /* Frameworks */,
+				91F006931BFC773B00047BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91F006971BFC773B00047BF4 /* PBXTargetDependency */,
+			);
+			name = FitleRecruitAppTests;
+			productName = FitleRecruitAppTests;
+			productReference = 91F006951BFC773B00047BF4 /* FitleRecruitAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		91F0069F1BFC773B00047BF4 /* FitleRecruitAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91F006AF1BFC773B00047BF4 /* Build configuration list for PBXNativeTarget "FitleRecruitAppUITests" */;
+			buildPhases = (
+				91F0069C1BFC773B00047BF4 /* Sources */,
+				91F0069D1BFC773B00047BF4 /* Frameworks */,
+				91F0069E1BFC773B00047BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91F006A21BFC773B00047BF4 /* PBXTargetDependency */,
+			);
+			name = FitleRecruitAppUITests;
+			productName = FitleRecruitAppUITests;
+			productReference = 91F006A01BFC773B00047BF4 /* FitleRecruitAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91F006791BFC773A00047BF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Yoann Cribier";
+				TargetAttributes = {
+					91F006801BFC773B00047BF4 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					91F006941BFC773B00047BF4 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 91F006801BFC773B00047BF4;
+					};
+					91F0069F1BFC773B00047BF4 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 91F006801BFC773B00047BF4;
+					};
+				};
+			};
+			buildConfigurationList = 91F0067C1BFC773A00047BF4 /* Build configuration list for PBXProject "FitleRecruitApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91F006781BFC773A00047BF4;
+			productRefGroup = 91F006821BFC773B00047BF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91F006801BFC773B00047BF4 /* FitleRecruitApp */,
+				91F006941BFC773B00047BF4 /* FitleRecruitAppTests */,
+				91F0069F1BFC773B00047BF4 /* FitleRecruitAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91F0067F1BFC773B00047BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F0068F1BFC773B00047BF4 /* LaunchScreen.storyboard in Resources */,
+				91F0068C1BFC773B00047BF4 /* Assets.xcassets in Resources */,
+				91F0068A1BFC773B00047BF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F006931BFC773B00047BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F0069E1BFC773B00047BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91F0067D1BFC773B00047BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F006871BFC773B00047BF4 /* ViewController.swift in Sources */,
+				91F006851BFC773B00047BF4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F006911BFC773B00047BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F0069A1BFC773B00047BF4 /* FitleRecruitAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F0069C1BFC773B00047BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F006A51BFC773B00047BF4 /* FitleRecruitAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91F006971BFC773B00047BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91F006801BFC773B00047BF4 /* FitleRecruitApp */;
+			targetProxy = 91F006961BFC773B00047BF4 /* PBXContainerItemProxy */;
+		};
+		91F006A21BFC773B00047BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91F006801BFC773B00047BF4 /* FitleRecruitApp */;
+			targetProxy = 91F006A11BFC773B00047BF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91F006881BFC773B00047BF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91F006891BFC773B00047BF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91F0068D1BFC773B00047BF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91F0068E1BFC773B00047BF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91F006A71BFC773B00047BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91F006A81BFC773B00047BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91F006AA1BFC773B00047BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitleRecruitApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.extends42.akabab.FitleRecruitApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		91F006AB1BFC773B00047BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitleRecruitApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.extends42.akabab.FitleRecruitApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		91F006AD1BFC773B00047BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FitleRecruitAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.extends42.akabab.FitleRecruitAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitleRecruitApp.app/FitleRecruitApp";
+			};
+			name = Debug;
+		};
+		91F006AE1BFC773B00047BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FitleRecruitAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.extends42.akabab.FitleRecruitAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitleRecruitApp.app/FitleRecruitApp";
+			};
+			name = Release;
+		};
+		91F006B01BFC773B00047BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FitleRecruitAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.extends42.akabab.FitleRecruitAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FitleRecruitApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		91F006B11BFC773B00047BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FitleRecruitAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.extends42.akabab.FitleRecruitAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FitleRecruitApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91F0067C1BFC773A00047BF4 /* Build configuration list for PBXProject "FitleRecruitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F006A71BFC773B00047BF4 /* Debug */,
+				91F006A81BFC773B00047BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91F006A91BFC773B00047BF4 /* Build configuration list for PBXNativeTarget "FitleRecruitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F006AA1BFC773B00047BF4 /* Debug */,
+				91F006AB1BFC773B00047BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		91F006AC1BFC773B00047BF4 /* Build configuration list for PBXNativeTarget "FitleRecruitAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F006AD1BFC773B00047BF4 /* Debug */,
+				91F006AE1BFC773B00047BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		91F006AF1BFC773B00047BF4 /* Build configuration list for PBXNativeTarget "FitleRecruitAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F006B01BFC773B00047BF4 /* Debug */,
+				91F006B11BFC773B00047BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91F006791BFC773A00047BF4 /* Project object */;
+}
