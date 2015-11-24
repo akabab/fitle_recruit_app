@@ -26,6 +26,8 @@ class LoginViewController: UIViewController {
     @IBAction func login() {
         messageLabel.text = ""
         
+        self.view.endEditing(true)
+        
         if (emailField.text ?? "").isEmpty  {
             messageLabel.text = "Missing email"
             return
@@ -82,6 +84,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func register() {
         messageLabel.text = ""
+        
+        self.view.endEditing(true)
         
         if (emailField.text ?? "").isEmpty  {
             print("Missing email")
