@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91391F371BFF1D9A00C16E5A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91391F361BFF1D9A00C16E5A /* User.swift */; settings = {ASSET_TAGS = (); }; };
+		9156741F1C04D7C800185D81 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156741E1C04D7C800185D81 /* JSON.swift */; settings = {ASSET_TAGS = (); }; };
+		915674211C04D7F100185D81 /* fitle_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 915674201C04D7F100185D81 /* fitle_logo.jpg */; settings = {ASSET_TAGS = (); }; };
 		91F006851BFC773B00047BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F006841BFC773B00047BF4 /* AppDelegate.swift */; };
-		91F006871BFC773B00047BF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F006861BFC773B00047BF4 /* ViewController.swift */; };
+		91F006871BFC773B00047BF4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F006861BFC773B00047BF4 /* LoginViewController.swift */; };
 		91F0068A1BFC773B00047BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F006881BFC773B00047BF4 /* Main.storyboard */; };
 		91F0068C1BFC773B00047BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F0068B1BFC773B00047BF4 /* Assets.xcassets */; };
 		91F0068F1BFC773B00047BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F0068D1BFC773B00047BF4 /* LaunchScreen.storyboard */; };
 		91F0069A1BFC773B00047BF4 /* FitleRecruitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F006991BFC773B00047BF4 /* FitleRecruitAppTests.swift */; };
 		91F006A51BFC773B00047BF4 /* FitleRecruitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F006A41BFC773B00047BF4 /* FitleRecruitAppUITests.swift */; };
+		91F006B31BFCC96300047BF4 /* SecretViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F006B21BFCC96300047BF4 /* SecretViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		91F006F51BFDCCE800047BF4 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F006F41BFDCCE800047BF4 /* HTTP.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91391F361BFF1D9A00C16E5A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9156741E1C04D7C800185D81 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		915674201C04D7F100185D81 /* fitle_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fitle_logo.jpg; sourceTree = "<group>"; };
 		91F006811BFC773B00047BF4 /* FitleRecruitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitleRecruitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F006841BFC773B00047BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91F006861BFC773B00047BF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91F006861BFC773B00047BF4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		91F006891BFC773B00047BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91F0068B1BFC773B00047BF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91F0068E1BFC773B00047BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,8 @@
 		91F006A01BFC773B00047BF4 /* FitleRecruitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitleRecruitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F006A41BFC773B00047BF4 /* FitleRecruitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitleRecruitAppUITests.swift; sourceTree = "<group>"; };
 		91F006A61BFC773B00047BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F006B21BFCC96300047BF4 /* SecretViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretViewController.swift; sourceTree = "<group>"; };
+		91F006F41BFDCCE800047BF4 /* HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9156741D1C04D78500185D81 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				915674201C04D7F100185D81 /* fitle_logo.jpg */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
 		91F006781BFC773A00047BF4 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +115,17 @@
 		91F006831BFC773B00047BF4 /* FitleRecruitApp */ = {
 			isa = PBXGroup;
 			children = (
+				9156741D1C04D78500185D81 /* img */,
 				91F006841BFC773B00047BF4 /* AppDelegate.swift */,
-				91F006861BFC773B00047BF4 /* ViewController.swift */,
+				91F006861BFC773B00047BF4 /* LoginViewController.swift */,
+				91391F361BFF1D9A00C16E5A /* User.swift */,
 				91F006881BFC773B00047BF4 /* Main.storyboard */,
+				91F006B21BFCC96300047BF4 /* SecretViewController.swift */,
+				91F006F41BFDCCE800047BF4 /* HTTP.swift */,
 				91F0068B1BFC773B00047BF4 /* Assets.xcassets */,
 				91F0068D1BFC773B00047BF4 /* LaunchScreen.storyboard */,
 				91F006901BFC773B00047BF4 /* Info.plist */,
+				9156741E1C04D7C800185D81 /* JSON.swift */,
 			);
 			path = FitleRecruitApp;
 			sourceTree = "<group>";
@@ -229,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F0068F1BFC773B00047BF4 /* LaunchScreen.storyboard in Resources */,
+				915674211C04D7F100185D81 /* fitle_logo.jpg in Resources */,
 				91F0068C1BFC773B00047BF4 /* Assets.xcassets in Resources */,
 				91F0068A1BFC773B00047BF4 /* Main.storyboard in Resources */,
 			);
@@ -255,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91F006871BFC773B00047BF4 /* ViewController.swift in Sources */,
+				91F006871BFC773B00047BF4 /* LoginViewController.swift in Sources */,
 				91F006851BFC773B00047BF4 /* AppDelegate.swift in Sources */,
+				91391F371BFF1D9A00C16E5A /* User.swift in Sources */,
+				9156741F1C04D7C800185D81 /* JSON.swift in Sources */,
+				91F006F51BFDCCE800047BF4 /* HTTP.swift in Sources */,
+				91F006B31BFCC96300047BF4 /* SecretViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +430,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.extends42.akabab.FitleRecruitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -413,6 +442,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.extends42.akabab.FitleRecruitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -483,6 +513,7 @@
 				91F006AB1BFC773B00047BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91F006AC1BFC773B00047BF4 /* Build configuration list for PBXNativeTarget "FitleRecruitAppTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +522,7 @@
 				91F006AE1BFC773B00047BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91F006AF1BFC773B00047BF4 /* Build configuration list for PBXNativeTarget "FitleRecruitAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +531,7 @@
 				91F006B11BFC773B00047BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
