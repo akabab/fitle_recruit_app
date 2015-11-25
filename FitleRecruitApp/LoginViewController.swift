@@ -11,124 +11,94 @@ import Foundation
 
 class LoginViewController: UIViewController {
     
+    var user = User()
+    
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
     @IBOutlet weak var messageLabel: UILabel!
-    
-    func isValidEmail(str: String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
-        let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
 
-        return emailTest.evaluateWithObject(str)
-    }
-    
     @IBAction func login() {
-        messageLabel.text = ""
+        enter()
         
-        self.view.endEditing(true)
+        if !validate() { return }
         
-        if (emailField.text ?? "").isEmpty  {
-            messageLabel.text = "Missing email"
-            return
-        }
-//        else if !isValidEmail(emailField.text!) {
-//            messageLabel.text = "Invalid email"
-//            return
-//        }
-        
-        
-        if (passwordField.text ?? "").isEmpty {
-            messageLabel.text = "Missing password"
-            return
-        }
-        
-        let params = [
-            "email": emailField.text!,
-            "password": passwordField.text!
-        ]
-        
-        let request = HTTP.formatPostRequest("http://recruiting.api.fitle.com/user/token", params: params)
-        
-        HTTP.sendRequest(request) {
-            (data, response, error) in
+        user.login(emailField.text!, password: passwordField.text!) {
+            (error) in
             if error != nil {
-                print(error!)
                 dispatch_async(dispatch_get_main_queue()) {
                     self.messageLabel.text = error!
                 }
             } else {
-                let jsonData = JSON.stringToDictionary(data)
-                print(jsonData)
-                
-                if let errorMessage = jsonData["error"] {
-                    print(errorMessage)
-                    dispatch_async(dispatch_get_main_queue()) {
-                        self.messageLabel.text = errorMessage as? String
-                    }
-                } else {
-                    dispatch_async(dispatch_get_main_queue()) {
-                        self.messageLabel.text = "Successfully logged"
-                        if let token = jsonData["token"] {
-                            let secretView = self.storyboard!.instantiateViewControllerWithIdentifier("SecretView") as! SecretViewController
-                            secretView.userToken = token as? String
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.messageLabel.text = "Successfully logged"
+                    
+                    if let token = self.user.token {
+                        let secretView = self.storyboard!.instantiateViewControllerWithIdentifier("SecretView") as! SecretViewController
+                        secretView.userToken = token
+                        // wait 1 sec before displaying secret view
+                        let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(1.0 * Double(NSEC_PER_SEC)))
+                        dispatch_after(delay, dispatch_get_main_queue()) {
                             self.presentViewController(secretView, animated: true, completion: nil)
-                        } else {
-                            print("Error: no token retrieved!")
                         }
                     }
                 }
             }
         }
+        
     }
     
     @IBAction func register() {
-        messageLabel.text = ""
+        enter()
         
-        self.view.endEditing(true)
-        
-        if (emailField.text ?? "").isEmpty  {
-            print("Missing email")
-            messageLabel.text = "Missing email"
-            return
-        }
-        
-        if (passwordField.text ?? "").isEmpty {
-            print("Missing password")
-            messageLabel.text = "Missing password"
-            return
-        }
-        
-        let params = [
-            "email": emailField.text!,
-            "password": passwordField.text!
-        ]
-            
-        let request = HTTP.formatPostRequest("http://recruiting.api.fitle.com/user/create", params: params)
-        
-        HTTP.sendRequest(request) {
-            (data, response, error) in
+        if !validate() { return }
+
+        user.register(emailField.text!, password: passwordField.text!) {
+            (error) in
             if error != nil {
-                print(error!)
                 dispatch_async(dispatch_get_main_queue()) {
                     self.messageLabel.text = error!
                 }
             } else {
-                let jsonData = JSON.stringToDictionary(data)
-                print(jsonData)
-                
-                if let errorMessage = jsonData["error"] {
-                    print(errorMessage)
-                    dispatch_async(dispatch_get_main_queue()) {
-                        self.messageLabel.text = errorMessage as? String
-                    }
-                } else {
-                    dispatch_async(dispatch_get_main_queue()) {
-                        self.messageLabel.text = "Account created succesfully"
-                    }
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.messageLabel.text = "Account created successfully"
                 }
             }
         }
+    }
+    
+    func enter() {
+        // clear message label
+        messageLabel.text = ""
+        
+        // dismiss keyboard
+        self.view.endEditing(true)
+    }
+    
+    func validate() -> Bool {
+        func isValidEmail(str: String) -> Bool {
+            let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+            let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+            
+            return emailTest.evaluateWithObject(str)
+        }
+        
+        if (emailField.text ?? "").isEmpty  {
+            messageLabel.text = "Missing email"
+            return false
+        }
+        
+        //        if !isValidEmail(emailField.text!) {
+        //            messageLabel.text = "Invalid email"
+        //            return false
+        //        }
+        
+        
+        if (passwordField.text ?? "").isEmpty {
+            messageLabel.text = "Missing password"
+            return false
+        }
+        
+        return true
     }
     
 }

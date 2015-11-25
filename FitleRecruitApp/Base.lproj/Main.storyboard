@@ -34,16 +34,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4n-NR-T36">
-                                <rect key="frame" x="193" y="425" width="214" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="214" id="T7t-PA-efP"/>
-                                    <constraint firstAttribute="height" constant="57" id="gfO-zN-qDd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fitle_logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eVv-UC-lBu">
                                 <rect key="frame" x="236" y="60" width="128" height="128"/>
                                 <constraints>
@@ -74,10 +64,21 @@
                                     <action selector="register" destination="BYZ-38-t0r" eventType="touchUpInside" id="GDF-gL-9zI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4n-NR-T36">
+                                <rect key="frame" x="193" y="396" width="214" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="T7t-PA-efP"/>
+                                    <constraint firstAttribute="height" constant="57" id="gfO-zN-qDd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="r4n-NR-T36" firstAttribute="top" secondItem="6UI-aH-Exw" secondAttribute="bottom" constant="24" id="4Vm-vJ-se2"/>
                             <constraint firstItem="eVv-UC-lBu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="6r5-if-aeZ"/>
                             <constraint firstItem="OM4-Kb-C45" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7sv-Ph-7a5"/>
                             <constraint firstItem="OM4-Kb-C45" firstAttribute="top" secondItem="v0U-QN-qgY" secondAttribute="bottom" constant="16" id="DQp-8h-bN3"/>
